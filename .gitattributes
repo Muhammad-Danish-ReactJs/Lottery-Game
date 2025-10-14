@@ -1,0 +1,26 @@
+# Ensure consistent line endings in the repository
+# Set Git's automatic text detection. This normalizes text files.
+* text=auto
+
+# Force LF in the working tree for common text files (helpful for cross-platform projects)
+*.sh    text eol=lf
+*.js    text eol=lf
+*.jsx   text eol=lf
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+
+# Treat common binary files as binary to avoid accidental CRLF normalization
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+
+# End of .gitattributes
