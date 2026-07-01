@@ -1,14 +1,8 @@
-import Lottery from './Lottery.jsx'
-import './App.css'
-function App() {
+import "./styles/global.css";
+import Lottery from "./components/Lottery";
 
-  
-  return (
-    <>
-      <Lottery n={3} WinningSum = {15}   />
-      
-    </>
-  )
+function App() {
+  return <Lottery n={3} winningSum={15} />;
 }
 
-export default App
+export default App;
